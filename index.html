@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AURORA Viagens & Experiências: destinos, aventuras e planejamento de viagens.">
+  <title>AURORA | Viagens & Experiências</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="topo">
+    <a class="marca" href="#inicio"><span class="simbolo">✦</span><span>AURORA<small>VIAGENS &
+          EXPERIÊNCIAS</small></span></a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="navegacao">
+      <a href="#inicio">Início</a><a href="#destinos">Destinos</a><a href="#aventuras">Aventuras</a>
+      <a href="#passagens">Passagens</a><a href="#hospedagem">Hospedagem</a><a href="#orcamento">Meu orçamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-conteudo">
+        <p class="sobretitulo">O mundo espera por você</p>
+        <h1>Explore novos caminhos.<br><em>Crie boas histórias.</em></h1>
+        <p>Descubra lugares incríveis e comece a planejar sua próxima experiência.</p>
+        <a class="botao" href="#destinos">Conheça os destinos</a>
+      </div>
+    </section>
+
+    <section class="secao" id="destinos">
+      <div class="titulo-secao">
+        <p class="sobretitulo">Inspire-se</p>
+        <h2>Destinos para descobrir</h2>
+        <p>De paisagens brasileiras a cidades pelo mundo, escolha seu próximo cenário.</p>
+      </div>
+      <div class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="nacional">Brasil</button>
+        <button class="filtro" data-filtro="internacional">Internacionais</button>
+      </div>
+      <div class="grade-destinos">
+        <article class="destino" data-tipo="nacional"><img src="imagens/noronha.png"
+            alt="Praia de águas azul-turquesa em Fernando de Noronha">
+          <div><span>PE • BRASIL</span>
+            <h3>Fernando de Noronha</h3>
+            <p>Praias, mar cristalino e natureza preservada.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="nacional"><img src="imagens/lençois.png.jpg"
+            alt="Dunas e lagoas dos Lençóis Maranhenses">
+          <div><span>MA • BRASIL</span>
+            <h3>Lençóis Maranhenses</h3>
+            <p>Dunas claras e lagoas de águas tranquilas.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="nacional"><img src="imagens/gramado.png.jpg"
+            alt="Arquitetura e paisagem de Gramado">
+          <div><span>RS • BRASIL</span>
+            <h3>Gramado</h3>
+            <p>Clima acolhedor, gastronomia e arquitetura charmosa.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="nacional"><img src="imagens/rj.png.jpg"
+            alt="Cristo Redentor e paisagem do Rio de Janeiro">
+          <div><span>RJ • BRASIL</span>
+            <h3>Rio de Janeiro</h3>
+            <p>Praias, montanhas e cultura em uma cidade vibrante.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="nacional"><img src="imagens/Chapada-diamantina.png.webp"
+            alt="Paisagem natural de montanhas e vegetação">
+          <div><span>BA • BRASIL</span>
+            <h3>Chapada Diamantina</h3>
+            <p>Trilhas, cachoeiras, grutas e mirantes.</p>
+          </div>
+        </article>
+        <!-- JALAPÃO - FERVEDOURO -->
+        <article class="destino" data-tipo="nacional">
+          <img src="imagens/jalapao-lago.png.jpeg" alt="Fervedouro de águas cristalinas no Jalapão">
+          <div>
+            <span>TO • BRASIL</span>
+            <h3>Jalapão – Fervedouros</h3>
+            <p>Águas cristalinas, natureza preservada e experiências únicas.</p>
+          </div>
+        </article>
+
+        <!-- JALAPÃO - CATARATAS -->
+        <article class="destino" data-tipo="nacional">
+          <img src="imagens/cataratas-jalapao.png.jpeg" alt="Cachoeira no Jalapão">
+          <div>
+            <span>TO • BRASIL</span>
+            <h3>Jalapão – Cachoeiras</h3>
+            <p>Quedas d'água impressionantes e paisagens naturais.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="nacional"><img src="imagens/gruta-bonito-ms.png.jpg"
+            alt="Águas cristalinas do Rio Sucuri em Bonito">
+          <div><span>MS • BRASIL</span>
+            <h3>Bonito</h3>
+            <p>Rios transparentes e experiências de ecoturismo.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="internacional"><img src="imagens/paris.png.jpg" alt="Vista urbana de Paris">
+          <div><span>FRANÇA</span>
+            <h3>Paris</h3>
+            <p>Arte, história, cafés e paisagens inesquecíveis.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="internacional"><img src="imagens/suiça.png.jpg"
+            alt="Montanhas dos Alpes suíços">
+          <div><span>EUROPA</span>
+            <h3>Suíça</h3>
+            <p>Alpes, lagos e vilarejos cercados pela natureza.</p>
+          </div>
+        </article>
+        <!-- DISNEY - ORLANDO -->
+        <article class="destino" data-tipo="internacional">
+          <img src="imagens/disney-orlando-florida.png" alt="Castelo da Disney em Orlando, Flórida">
+          <div>
+            <span>FLÓRIDA • ESTADOS UNIDOS</span>
+            <h3>Orlando – Disney</h3>
+            <p>Magia, diversão e experiências inesquecíveis para toda a família.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="internacional"><img src="imagens/japao.png.webp"
+            alt="Templo tradicional em Kyoto, Japão">
+          <div><span>JAPÃO</span>
+            <h3>Kyoto</h3>
+            <p>Templos, jardins e tradições japonesas.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="internacional"><img src="imagens/maldivas-praia.png.jpg"
+            alt="Vilas sobre o mar nas Maldivas">
+          <div><span>OCEANO ÍNDICO</span>
+            <h3>Maldivas</h3>
+            <p>Praias de areia branca e mar em tons de azul.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="internacional"><img src="imagens/roma-vaticao.png.jpg"
+            alt="Coliseu de Roma">
+          <div><span>ITÁLIA</span>
+            <h3>Roma</h3>
+            <p>Monumentos históricos, praças e gastronomia.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="internacional"><img src="imagens/NY.png.jpg"
+            alt="Arranha-céus de Nova York">
+          <div><span>ESTADOS UNIDOS</span>
+            <h3>Nova York</h3>
+            <p>Uma metrópole de cultura, compras e entretenimento.</p>
+          </div>
+        </article>
+        <!-- ALASCA - GELEIRAS -->
+        <article class="destino" data-tipo="internacional">
+          <img src="imagens/alasca-gelo.png.jpg" alt="Geleiras e montanhas nevadas do Alasca">
+          <div>
+            <span>ALASCA • ESTADOS UNIDOS</span>
+            <h3>Geleiras do Alasca</h3>
+            <p>Montanhas geladas, geleiras e paisagens naturais impressionantes.</p>
+          </div>
+        </article>
+
+        <!-- ALASCA - VILAREJOS -->
+        <article class="destino" data-tipo="internacional">
+          <img src="imagens/alasca-casas.png.jpg" alt="Casas em uma paisagem do Alasca">
+          <div>
+            <span>ALASCA • ESTADOS UNIDOS</span>
+            <h3>Vilarejos do Alasca</h3>
+            <p>Pequenas comunidades cercadas por montanhas e natureza.</p>
+          </div>
+        </article>
+
+        <!-- ALASCA - AURORA BOREAL -->
+        <article class="destino" data-tipo="internacional">
+          <img src="imagens/alasca-auroraboreal.png.jpg" alt="Aurora boreal iluminando o céu do Alasca">
+          <div>
+            <span>ALASCA • ESTADOS UNIDOS</span>
+            <h3>Aurora Boreal</h3>
+            <p>Um espetáculo de luzes coloridas que transforma o céu noturno.</p>
+          </div>
+        </article>
+        <article class="destino" data-tipo="internacional"><img src="imagens/toronto-city.png.webp"
+            alt="Skyline de Toronto com a CN Tower">
+          <div><span>CANADÁ</span>
+            <h3>Toronto</h3>
+            <p>Diversidade cultural, arte e vida urbana. <b>Destino LGBTQIA+ friendly 🏳️‍🌈</b></p>
+          </div>
+        </article>
+        <!-- TAILÂNDIA - LAGO -->
+        <article class="destino" data-tipo="internacional">
+          <img src="imagens/tailandia-lago..png.jpg" alt="Paisagem de lago na Tailândia">
+          <div>
+            <span>ÁSIA • TAILÂNDIA</span>
+            <h3>Lagos da Tailândia</h3>
+            <p>Paisagens tropicais, águas cristalinas e natureza exuberante.</p>
+          </div>
+        </article>
+
+        <!-- TAILÂNDIA -->
+        <article class="destino" data-tipo="internacional">
+          <img src="imagens/tailandia.png.jpg" alt="Paisagem turística da Tailândia">
+          <div>
+            <span>ÁSIA • TAILÂNDIA</span>
+            <h3>Tailândia</h3>
+            <p>Templos, praias paradisíacas, cultura e gastronomia.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="faixa" id="aventuras">
+      <div>
+        <p class="sobretitulo">Viva a experiência</p>
+        <h2>Mais do que viajar:<br>viva cada momento.</h2>
+        <p>Natureza, cultura e experiências gastronômicas se encontram em viagens cheias de descobertas, aventura e
+          momentos inesquecíveis..</p>
+      </div>
+    </section>
+
+    <section class="secao duas-colunas" id="passagens">
+      <div>
+        <p class="sobretitulo">Comece sua jornada</p>
+        <h2>Passagens aéreas</h2>
+        <p>Pesquise voos, compare datas e considere o aeroporto de saída. Os valores apresentados no projeto são
+          exemplos ilustrativos, não cotações em tempo real.</p><a class="botao botao-claro" href="#orcamento">Estimar
+          minha viagem</a>
+      </div>
+      <div class="painel"><span class="icone">✈</span>
+        <h3>Planeje seu voo</h3>
+        <p>Origem • Destino • Datas • Quantidade de viajantes</p>
+      </div>
+    </section>
+
+    <section class="secao duas-colunas invertida" id="hospedagem">
+      <div>
+        <p class="sobretitulo">Seu lugar para descansar</p>
+        <h2>Hospedagem</h2>
+        <p>Considere a localização, a quantidade de noites, o café da manhã e as avaliações antes de escolher onde
+          ficar.</p>
+      </div>
+      <div class="painel"><span class="icone">⌂</span>
+        <h3>Escolha onde ficar</h3>
+        <p>Hotel • Pousada • Apartamento • Resort</p>
+      </div>
+    </section>
+
+    <section class="secao orcamento" id="orcamento">
+      <div class="titulo-secao">
+        <p class="sobretitulo">Organize os custos</p>
+        <h2>Simule seu orçamento</h2>
+        <p>Preencha os valores para calcular uma estimativa da viagem.</p>
+      </div>
+      <div class="calculadora">
+        <label>Passagens (R$)<input id="passagem" type="number" min="0" placeholder="Ex.: 2500"></label>
+        <label>Hospedagem total (R$)<input id="hotel" type="number" min="0" placeholder="Ex.: 1800"></label>
+        <label>Passeios e extras (R$)<input id="extras" type="number" min="0" placeholder="Ex.: 500"></label>
+        <button class="botao" id="calcular">Calcular estimativa</button>
+        <p class="resultado" id="resultado" aria-live="polite">Total estimado: R$ 0,00</p>
+        <small>Simulação educativa. Consulte fornecedores para confirmar preços, taxas e disponibilidade.</small>
+      </div>
+    </section>
+
+
+    <!-- CONTATO -->
+    <section class="secao contato" id="contato">
+      <div class="titulo-secao">
+        <p class="sobretitulo">Estamos aqui para ajudar</p>
+        <h2>Entre em contato</h2>
+        <p>Fale conosco para planejar sua próxima viagem!</p>
+      </div>
+
+      <form class="calculadora" id="form-contato">
+        <label for="nome">Nome:
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </label>
+
+        <label for="email">E-mail:
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </label>
+
+        <label for="mensagem">Mensagem:
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+        </label>
+
+        <button class="botao" type="submit">Enviar mensagem</button>
+        <p id="retorno-contato" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div><a class="marca marca-rodape" href="#inicio"><span class="simbolo">✦</span><span>AURORA<small>VIAGENS &
+            EXPERIÊNCIAS</small></span></a>
+      <p>Explore novos caminhos. Crie boas histórias.</p>
+    </div>
+    <div class="galeria-rodape"><img
+        src="https://images.trvl-media.com/place/553248621532466981/f7f4ae8b-d08c-4e18-b3df-87c016a0c00f.jpg"
+        alt="Praia"><img
+        src="https://experience-travel.b-cdn.net/landen/brazilie/gallery/lencois-maranhenses-np---rondreis-brazilie.jpg?format=jpeg&height=1600&width=2400"
+        alt="Dunas"><img src="https://a.cdn-hotels.com/gdcs/production183/d208/544ce81c-5dfe-4f01-8461-0f941576f4af.jpg"
+        alt="Toronto"></div>
+    <p class="copyright">© 2026 AURORA — Projeto acadêmico de desenvolvimento web.</p>
+  </footer>
+
+</body>
+
+</html>
